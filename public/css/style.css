@@ -1,40 +1,40 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #fff;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
-  --gradientStart:  #2D4473;
-  --gradientEnd: #2D4473;
-  --gradientStartRGBA:rgb(45,68,115,0.8);
-  --gradientEndRGBA:rgb(50,112,166,0.3);
+  --gradientStart: #2d4473;
+  --gradientEnd: #2d4473;
+  --gradientStartRGBA: rgb(45, 68, 115, 0.8);
+  --gradientEndRGBA: rgb(50, 112, 166, 0.3);
   /* --servicesStart: #3e335e;
   --servicesEnd:#1c2c3c; */
-  --servicesStart:#3270A6 ;
-  --servicesEnd:#3270A6;
-  --headingColor : #2D4473;
+  --servicesStart: #3270a6;
+  --servicesEnd: #3270a6;
+  --headingColor: #2d4473;
   /* --headingColor : #F25D07; */
-  --paddingSize:50px;
+  --paddingSize: 50px;
 
   /* background: linear-gradient(to right,var(--servicesStart) 0%,  var(--servicesEnd) 100%) ; */
 }
-h1{
+h1 {
   color: #3e335e;
   display: table; /*keep the background color wrapped tight*/
-    margin: 0px auto 0px auto; /* keep the table centered */
-    padding:5px;
-    font-size:20px;
-    background-color:var(--gradientStart);
-    color:#ffffff;
-    border: 1px #fff;
+  margin: 0px auto 0px auto; /* keep the table centered */
+  padding: 5px;
+  font-size: 20px;
+  background-color: var(--gradientStart);
+  color: #ffffff;
+  border: 1px #fff;
 }
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -43,7 +43,7 @@ h2 {
   font-size: 36px;
   /* color: #333; */
   /* color: #849cac; */
-  color:var(--headingColor)
+  color: var(--headingColor);
 }
 h3 {
   font-size: 20px;
@@ -106,14 +106,14 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 38px;
   /* font-weight: 700; */
   color: #333;
   text-transform: lowercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   color: #555;
   font-size: 15px;
@@ -130,10 +130,13 @@ hr {
   width: 0;
   height: 2px;
   /* background: linear-gradient(to right, var(--gradientStart) 0%, #var(--gradientEnd) 100%); */
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%) ;
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
 
-
-  content: "";
+  content: '';
   transition: width 0.2s;
 }
 #menu.navbar-default .navbar-nav > li > a:hover:after {
@@ -154,10 +157,13 @@ hr {
   width: 100% !important;
   height: 2px !important;
   /* background: linear-gradient(to right, var(--gradientStart) 0%, #var(--gradientEnd) 100%) !important; */
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%) !important;
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  ) !important;
 
-  
-  content: "" !important;
+  content: '' !important;
   transition: width 0.2s !important;
 }
 .navbar-toggle {
@@ -184,9 +190,13 @@ hr {
 }
 .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   /* background: linear-gradient(to right, #var(--gradientEnd) 0%, var(--gradientStart) 100%); */
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
 
   height: 4px;
   width: 60px;
@@ -198,12 +208,16 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: var(--gradientEnd);
   /* background-image: linear-gradient(to right, #var(--gradientEnd) 0%, var(--gradientStart) 100%); */
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
 
   padding: 14px 34px;
   letter-spacing: 1px;
@@ -256,7 +270,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
-  font-family: "  ", sans-serif;
+  font-family: '  ', sans-serif;
   color: #fff;
   font-size: 82px;
   font-weight: 700;
@@ -286,7 +300,7 @@ header .intro-text {
   margin-top: 2%;
   /* background: #f6f6f6; */
 }
-#features p{
+#features p {
   color: #000;
 }
 #features i.fa {
@@ -298,7 +312,11 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -314,14 +332,17 @@ header .intro-text {
   margin-bottom: 15px;
   padding-bottom: 15px;
   color: var(--gradientStart);
-  
 }
 #about h2::after {
   position: absolute;
-  content: "";
+  content: '';
   color: var(--gradientStart);
 
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
   /* background: linear-gradient(to right, #var(--gradientEnd) 0%, var(--gradientStart) 100%); */
   height: 4px;
   width: 60px;
@@ -334,11 +355,10 @@ header .intro-text {
   list-style: none;
   padding: 0;
   color: #000;
-
 }
 #about .about-text li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
+  content: '\f00c';
+  font-family: 'FontAwesome';
   /* color: #var(--gradientEnd); */
   color: var(--gradientStart);
   font-size: 11px;
@@ -361,7 +381,11 @@ header .intro-text {
 #services {
   padding: var(--paddingSize) 0;
 
-  background: linear-gradient(to right,var(--servicesStart)  0%,  var(--servicesEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--servicesStart) 0%,
+    var(--servicesEnd) 100%
+  );
   /* background: linear-gradient(to right, var(--gradientStart) 0%, #var(--gradientEnd) 100%); */
   color: #fff;
 }
@@ -373,7 +397,7 @@ header .intro-text {
 }
 #services .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background: var(--gradientStart);
   height: 4px;
   width: 60px;
@@ -386,7 +410,11 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right,var(--gradientStart) 0%,  var(--gradientEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradientStart) 0%,
+    var(--gradientEnd) 100%
+  );
   /* background: linear-gradient(to right, var(--gradientStart) 0%, #var(--gradientEnd) 100%); */
   border-radius: 50%;
   color: #fff;
@@ -407,13 +435,12 @@ header .intro-text {
 #portfolio {
   /* padding: 100px 0; */
   padding: var(--paddingSize) 0;
-
 }
 .-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
 }
-#portfolio  p{
+#portfolio p {
   color: #000;
 }
 .portfolio-item .hover-bg {
@@ -431,8 +458,11 @@ header .intro-text {
     rgba(99, 114, 255, 0.8) 0%,
     rgba(92, 169, 251, 0.8) 100%
   ); */
-  background: linear-gradient(to right,var(--gradientStartRGBA) 0%,  var(--gradientStartRGBA) 100%);
-
+  background: linear-gradient(
+    to right,
+    var(--gradientStartRGBA) 0%,
+    var(--gradientStartRGBA) 100%
+  );
 
   padding: 20% 0 0;
   height: 100%;
@@ -461,8 +491,6 @@ header .intro-text {
   opacity: 1;
 }
 
-
-
 #portfolio .social ul li {
   display: inline-block;
   margin: 0 20px;
@@ -481,8 +509,6 @@ header .intro-text {
   color: #608dfd;
   background: #fff;
 }
-
-
 
 /* Testimonials Section */
 #testimonials {
@@ -519,7 +545,7 @@ header .intro-text {
   margin-bottom: 0;
   font-size: 14px;
   font-style: italic;
-  color:#000;
+  color: #000;
 }
 .testimonial-meta {
   margin-top: 10px;
@@ -531,7 +557,6 @@ header .intro-text {
 #team {
   /* padding: 100px 0; */
   padding: var(--paddingSize) 0;
-
 }
 #team h4 {
   margin: 5px 0;
@@ -547,11 +572,9 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
-#team p{
+#team p {
   color: #000;
 }
-
-
 
 /* Contact Section */
 #contact {
@@ -559,7 +582,11 @@ header .intro-text {
   padding: var(--paddingSize) 0;
 
   /* background: linear-gradient(to right, var(--gradientStart) 0%, var(--gradientEnd) 100%); */
-  background: linear-gradient(to right,var(--servicesStart)  0%,  var(--servicesEnd) 100%);
+  background: linear-gradient(
+    to right,
+    var(--servicesStart) 0%,
+    var(--servicesEnd) 100%
+  );
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -576,7 +603,7 @@ header .intro-text {
 }
 #contact .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.3);
   height: 4px;
   width: 100px;
@@ -609,7 +636,7 @@ header .intro-text {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   float: left;
 }
 #contact .form-control {
@@ -648,7 +675,7 @@ label {
   color: #777;
 }
 #contact .contact-item {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 #contact .contact-item span {
   color: rgba(255, 255, 255, 1);
@@ -704,8 +731,6 @@ label {
   }
 }
 
-
-
 #title {
   position: absolute;
   top: 50%;
@@ -721,40 +746,36 @@ label {
   /* -moz-user-select: none; Old versions of Firefox */
   /* -ms-user-select: none; Internet Explorer/Edge */
   /* user-select: none; Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */ 
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 #titlediv {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff !important;
   text-align: center;
   pointer-events: none;
-  
 }
 
 .main-title {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	color: #f9f1e9;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 
-.main-title
- {
-	text-transform: uppercase;
-	font-size: 4.2em;
-	letter-spacing: 0.1em;
+.main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
 }
 
 .main-title .thin {
-	font-weight: 200;
-  color:#fff;
+  font-weight: 200;
+  color: #fff;
   /* display: inline; */
 }
-
-

@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react'
-import { Navigation } from './components/navigation'
-import { Header } from './components/header'
-import { Values } from './components/values'
-import { About } from './components/about'
-import { Services } from './components/services'
-import { Products } from './components/products'
-import { Testimonials } from './components/testimonials'
-import { Team } from './components/Team'
-import { Contact } from './components/contact'
-import JsonData from './data/data.json'
-import SmoothScroll from 'smooth-scroll'
 import './App.css'
+import store from './app/store'
+
+import { useState, useEffect } from 'react'
+
+import { Navigation } from './components/navigation'
+import SmoothScroll from 'smooth-scroll'
+
+import { fetchAboutUs } from './features/aboutUs/aboutUsSlice'
+import Header from './features/aboutUs/Header'
+import Contact from './features/aboutUs/Contact'
+import AboutUs from './features/aboutUs/AboutUs'
 import ServiceList from './features/services/ServiceList'
 import ProductsList from './features/products/ProductsList'
+import Values from './features/aboutUs/Values'
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -20,25 +20,22 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 })
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({})
-  useEffect(() => {
-    setLandingPageData(JsonData)
-  }, [])
+  // const [landingPageData, setLandingPageData] = useState({})
+  // useEffect(() => {
+  //   setLandingPageData(JsonData)
+  // }, [])
+
+  store.dispatch(fetchAboutUs())
 
   return (
     <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Values data={landingPageData.Values} />
-      <About data={landingPageData.About} />
-      {/* <Services data={landingPageData.Services} /> */}
+      <Header />
+      <Values />
+      <AboutUs />
       <ServiceList />
-      {/* <Products data={landingPageData.Products} /> */}
       <ProductsList />
-      {/* <Products /> */}
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      {/* <Team data={landingPageData.Team} /> */}
-      <Contact data={landingPageData.Contact} />
+      <Contact />
     </div>
   )
 }
